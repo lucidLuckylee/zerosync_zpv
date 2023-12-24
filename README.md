@@ -13,6 +13,7 @@ cargo run -r proof_data zerosync_proof.tar.gz
 blocksat-cli blocksat-cli api demo-rx
 
 # If the archive is encrypted with your public key
+blocksat-cli api listen --demo --exec 'cargo run -r proof_data {}' --insecure
 
 # WARNING: High security risk!
 # If security is no issue for you you can handle every received message as a potential proof and validate it.
